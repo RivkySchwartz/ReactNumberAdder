@@ -84,7 +84,6 @@ class NumberTable extends React.Component {
         );
     };
 
-
     getContent = () => {
         return (
             <div style={{ maxHeight: 500, overflowY: 'scroll' }}>
@@ -97,7 +96,7 @@ class NumberTable extends React.Component {
                     </thead>
                     <tbody>
                         {this.state.numbers.map((n) => {
-                            const isLocked = this.state.lockedNumbers.some(l => l.numId === n.numId); 
+                            const isLocked = this.state.lockedNumbers.some(l => l.numId === n.numId);
                             return (
                                 <NumberRow
                                     key={n.numId}

@@ -3,9 +3,9 @@ import React from 'react';
 class NumberRow extends React.Component {
 
     render() {
-        const { onSelectClick, isSelected, disabled } = this.props;
+        const { number, onSelectClick, isSelected, disabled } = this.props;
         return <tr>
-            <td>{this.props.number}</td>
+            <td>{number}</td>
             <td>
                 <button className={`btn btn-${isSelected ? 'danger' : 'primary'}`}
                     disabled={disabled}
